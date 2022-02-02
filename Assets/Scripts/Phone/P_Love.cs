@@ -15,5 +15,4 @@ public class P_Love : MonoBehaviour
     {
         
     }
-added
 }
