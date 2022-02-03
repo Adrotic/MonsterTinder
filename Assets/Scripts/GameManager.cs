@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int fps;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Application.targetFrameRate = fps;
     }
 
     // Update is called once per frame

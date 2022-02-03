@@ -20,7 +20,7 @@ public class CameraManager : MonoBehaviour
     {
         currentCam = cameras[0];
         SetCameraSize();
-        EShake(0.05f);
+        //EShake(0.05f);
     }
 
     void SetCameraSize()
