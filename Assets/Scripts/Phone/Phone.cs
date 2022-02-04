@@ -39,7 +39,6 @@ public class Phone : MonoBehaviour
     }
     void Move()
     {
-
         switch (crHoldState)
         {
             case HoldState.movingUp:
@@ -78,16 +77,19 @@ public class Phone : MonoBehaviour
     }
     public void ToggleHeldPhonePosition(InputAction.CallbackContext context)
     {
-        switch (crHoldState)
+        if (context.started)
         {
-            case HoldState.up:
-            case HoldState.movingUp:
-                crHoldState = HoldState.movingDown;
-                break;
-            case HoldState.down:
-            case HoldState.movingDown:
-                crHoldState = HoldState.movingUp;
-                break;
+            switch (crHoldState)
+            {
+                case HoldState.up:
+                case HoldState.movingUp:
+                    crHoldState = HoldState.movingDown;
+                    break;
+                case HoldState.down:
+                case HoldState.movingDown:
+                    crHoldState = HoldState.movingUp;
+                    break;
+            }
         }
     }
 }
