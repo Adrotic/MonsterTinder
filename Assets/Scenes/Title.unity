@@ -309,9 +309,9 @@ MonoBehaviour:
   controls: {fileID: -944628639613478452, guid: e7c625d049ce6b44abb1d54dc348a1b7, type: 3}
   scenes:
   - TestScene
-  - Title
-  - Title
-  - Title
+  - 
+  - 
+  - 
   crSelection: 0
   sprites:
   - {fileID: 21300000, guid: cea07f7f0bba2554b96ceb8c2051c7a2, type: 3}
@@ -355,6 +355,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9bdaad18-4624-4ae1-8b1f-7f5474a1bf57
     m_ActionName: Title/SelectionUp[/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6a33d018-060a-4aa2-89d4-80188537300f
+    m_ActionName: Title/Select[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard/Mouse
   m_DefaultActionMap: Title
